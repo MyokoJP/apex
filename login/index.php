@@ -2,7 +2,7 @@
 
 // パスワードを設定する
 $username = 'websupport';
-$password = '2022shakai';
+$password = 'shakai_history';
 // cookieを持っていなかったときの処理
 if (!isset($_COOKIE['CookieLogin'])) {
     setcookie('CookieLogin', 'unverify');
@@ -11,7 +11,7 @@ if (!isset($_COOKIE['CookieLogin'])) {
 }
 // cookieを持っていたときの処理
 if($_COOKIE['CookieLogin'] == 'verify') {
-    header('Location: ../');
+    header('Location: https://ws.battle-earth.net');
     echo ($_COOKIE['CookieLogin']);
 } else {
     setcookie('CookieLogin', 'unverify');
