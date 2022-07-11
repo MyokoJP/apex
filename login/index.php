@@ -11,7 +11,7 @@ if (!isset($_COOKIE['CookieLogin'])) {
 }
 // cookieを持っていたときの処理
 if($_COOKIE['CookieLogin'] == 'verify') {
-    header('Location: https://ws.battle-earth.net');
+    header('Location: https://ws.myoko.xyz');
     echo ($_COOKIE['CookieLogin']);
 } else {
     setcookie('CookieLogin', 'unverify');
